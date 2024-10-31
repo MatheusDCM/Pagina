@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Atrito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="box"></div>
+    </div>
+    <button id="startButton" onclick="startSimulation()">Iniciar</button>
+    <div>
+        <label for="velocity">Velocidade (m/s): </label>
+        <input type="number" id="velocity" value="1" min="0.1" step="0.1">
+        <label for="friction">Atrito: </label>
+        <input type="number" id="friction" value="0.1" min="0" step="0.01">
+    </div>
+    <div id="result"></div>
+    <button id="restartButton" onclick="restartSimulation()" style="display:none;">Reiniciar</button>
+    <script src="script.js"></script>
+</body>
+</html>
